@@ -172,9 +172,12 @@ html{
 
 /* slider */
 
-
+/* .carousel-item img {
+    height: 390px;
+} */
 
 /* banner */
+
 
 /* display */
 
@@ -482,7 +485,7 @@ video{
 }
 
 @media only screen and (max-width: 280px){
-    .banner{
+    .slide{
         padding: 350px 20px;
     }
 }
@@ -505,3 +508,4 @@ video{
         min-height: 100vh;
     }
 }
+

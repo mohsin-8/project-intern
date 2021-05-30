@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar-holder{
+    width: 100%;
+}
+
+.overlay{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color:#00000057;
+}
+
+
+.navbar-container{
+    background-color: #A00B1E;
+}
+
+.navbar-holder .logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.navbar-holder .main-bar{
+    padding: 25px 0;
+}
+
+.navbar-holder .bars{
+    position: relative;
+    z-index: 5;
+}
+
+.navbar-holder .bars span{
+    display: block;
+    color: white;
+}
+
+.navbar-holder .bars span.sp-2{
+    position: absolute;
+    top: 8px;
+}
+
+.navbar-holder .bars span.sp-3{
+    position: absolute;
+    top: 16px;
+}
+
+.navbar-holder .side-bar{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    visibility: hidden;
+    background-color: white;
+    z-index: 10;
+    transition-delay: 0.3s;
+    transition: 0.3s linear;
+}
+
+.navbar-holder .side-bar .fa-times{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.navbar-holder{
+    font-family: 'Markazi Text', serif;
+}
+
+.navbar-holder .bars{
+    cursor: pointer;
+}
+
+.navbar-holder .side-bar h5.heading{
+    letter-spacing: 1.5px;
+}
+
+.navbar-holder .side-bar h5{
+    font-size: 1.3rem;
+}
+
+.navbar-holder .side-bar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.navbar-holder .side-bar a{
+    border-top: 1px solid gainsboro;
+    width: 100%;
+    display: inline-block;
+    padding: 12px 5px;
+}
+
+.navbar-holder .side-bar a.last{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+/* navbar */
+
+/* banner */
+/* .banner{
+    padding: 20px;
+    background: linear-gradient(0deg, rgb(0, 0, 0,0.4), rgb(0, 0, 0,0.4)), url('img/bg.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    background-position: center center;
+}
+.banner .banner-text{
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+.banner .banner-text h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3.5rem;
+}
+.banner .banner-text p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-family: 'Markazi Text', serif;
+    margin-top: 20px;
+}
+.banner button.btn-contact{
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: 0.3s linear;
+}
+.banner button.btn-contact a{
+    color: white;
+    text-decoration: none;
+}
+.banner button.btn-contact:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.banner button.btn-contact:hover a{
+    color:black
+} */
+
+/* slider */
+
+
+
+/* banner */
+
+/* display */
+
+.display h5{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.display .img-div img{
+    transition: 0.3s linear;
+}
+
+.display .img-div{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.display .img-div:hover img{
+    transform: scale(1.05);
+}
+
+.display .img-div .div-text{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 700;
+}
+
+.display .img-div .div-text{
+    border: 1px solid white;
+    width: 150px;
+    padding: 15px 10px;
+}
+
+/* display */
+
+
+/* trending */
+
+.trending h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.trending p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.trending .nav-pills{
+    background-color: transparent !important;
+}
+
+.trending .nav-pills .nav-item .nav-link{
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    border: 2px solid #A00B1E;
+    transition: 0.3s linear;
+    margin-right: 10px;
+}
+
+.trending .nav-pills .nav-item .nav-link:hover{
+    background-color: #A00B1E;
+    color: white;
+}
+
+.trending .nav-pills .nav-item .nav-link.active{
+    background-color: #A00B1E !important;
+    color: white;
+}
+
+.trending .div-discription{
+    margin-top: -20px;
+    padding: 0 10px;
+}
+
+.trending .div-discription h5{
+    font-size: 1.5rem;
+    font-family: 'Markazi Text', serif;
+    margin: 0;
+}
+
+.trending small{
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* trending */
+
+/* testimonial */
+.testimonial{
+    background-color:#A00B1E;
+}
+
+.testimonial h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.testimonial .div-card .div-content h5{
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.testimonial .div-card .div-content p{
+    font-weight: 300;
+    color: white;
+}
+
+.testimonial .swiper-pagination-bullet{
+    background-color: white
+}
+
+.testimonial small{
+    color: white;
+}
+
+.testimonial .swiper-pagination-bullet:focus{
+    border: none;
+    outline: none;
+}
+/* testimonial */
+
+
+/* about-us */
+.about-us h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 3.5rem;
+}
+/* about-us */
+
+
+/* video banner */
+.video-banner{
+    background: linear-gradient(0deg, rgb(0, 0, 0,0.4), rgb(0, 0, 0,0.4)), url('img/bg.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center center;
+}
+
+.video-banner .banner-text{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+
+.video-banner .banner-text h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.video-banner .banner-text p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-family: 'Markazi Text', serif;
+    margin-top: 20px;
+}
+
+.video-banner .banner-text span{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #A00B1E;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition:0.3s linear;
+    cursor: pointer;
+}
+
+.video-banner .banner-text span:hover{
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 12px 0px rgba(255,255,255,1);
+}
+
+.video-banner .banner-text .fa-play{
+    color: white;
+    font-size: 2rem;
+    line-height: 80px;
+    margin-left: 5px;
+}
+/* video banner */
+
+
+/* video-show */
+.classZindex-1{
+    z-index: -1 !important;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 20;
+    border: none;
+    outline: none;
+}
+
+#cancel-video{
+    z-index: 25;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: red;
+}
+
+/* video-show */
+
+
+/* handmade icecream */
+
+.handmade-icecream h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.handmade-icecream .div-sub-heading h3{
+    color: #A00B1E;
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.handmade-icecream p.p-disc{
+    font-family: 'Markazi Text', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 2px dotted gainsboro;
+}
+
+.handmade-icecream h5.name{
+    color:#c03333
+}
+
+.handmade-icecream h5{
+    color:#A00B1E;
+}
+/* handmade icecream */
+
+
+/* footer */
+
+.footer{
+    background-color: #A00B1E;
+}
+
+.footer h5{
+    font-weight: 600;
+    color: white;
+}
+
+.footer ul li a{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer ul li{
+    color: white;
+    font-weight: 400;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer p{
+    color: white !important;
+    font-weight: 500;
+}
+
+.footer span .fa{
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+/* footer */
+
+.family{
+    font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 280px){
+    .banner{
+        padding: 350px 20px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .navbar-holder .side-bar{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .video-banner{
+        padding: 400px 20px;
+        min-height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 230px){
+    .video-banner{
+        min-height: 100vh;
+    }
+}

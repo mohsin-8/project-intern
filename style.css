@@ -219,6 +219,12 @@ html{
 
 /* display */
 
+.new-branch h1{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 3.5rem;
+}
+
 
 /* trending */
 

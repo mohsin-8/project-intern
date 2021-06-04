@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- playball google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- Markazi Text google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Playball&display=swap" rel="stylesheet">
+    <!-- dancing script google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon -->
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="16x16">
+
+    <title>Karachi Rabri</title>
+</head>
+
+<body>
+    <!-- section navbar -->
+    <header class="navbar-holder sticky-top">
+        <div id="overlay" class="overlay d-none"></div>
+        <div id="videooverlay" class="videooverlay d-none"></div>
+
+        <div class="container-fluid navbar-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-bar d-flex justify-content-between">
+                        <div class="logo">
+                            <img class="ml-sm-3 ml-1" src="img/logo.png" alt="">
+                        </div>
+                        <div class="bars mr-sm-3 mr-1" onclick="handleNavbar()">
+                            <span class="sp-1">━━━</span>
+                            <span class="sp-2">━━</span>
+                            <span class="sp-3">━━━</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar" class="side-bar">
+            <i onclick="handleNavbar()" class="fa fa-times d-block d-sm-none" aria-hidden="true"></i>
+            <div class="container">
+                <div class="row justify-content-center pt-4">
+                    <div class="col-12 text-center">
+                        <h5 class="heading"><b>MENU</b></h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <a onclick="handleClick()" href="./ajman.html">Home</a>
+                    </div>
+                    <div class="col-12">
+                        <a onclick="handleClick()" href="#featured">Featured</a>
+                    </div>
+                    <div class="col-12">
+                        <a onclick="handleClick()" href="#reviews">Reviews</a>
+                    </div>
+                    <div class="col-12">
+                        <a onclick="handleClick()" href="#about" class="last">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section navbar -->
+
+
+    <!--------Items-------->
+    <div class="col-md-6 col-12 px-4 my-3">
+        <h1 style="font-family: 'Dancing Script', cursive; font-size: 55px;">Chaat Corner</h1>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="tab-content" id="pills-tabContent1">
+            <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="./img/dahi-bara1.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Methay Dahibara</h5>
+                                <small>5.25<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/chanacht2.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Chana chaat</h5>
+                                <small>5.25<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/mixcht1.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Mix Chaat</h5>
+                                <small>5.25<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/8.png" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Gol Gappe</h5>
+                                <small>7.36<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/samosacht1.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Samosa Chaat</h5>
+                                <small>5.25<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/nmkpry1.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Namak para</h5>
+                                <small>21<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/15.png" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Halwa Pori</h5>
+                                <small>6.30<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/17.png" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Spring Roll</h5>
+                                <small>1.6<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/18.png" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Aloo Samosa</h5>
+                                <small>1.6<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="img/23.png" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Qeema Samosa</h5>
+                                <small>1.6<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="img-div">
+                                <img class="w-100 h-100" src="./img/samosacht1.jpg" alt="">
+                            </div>
+                            <div class="div-discription mt-2">
+                                <h5>Single Samosa Chaat</h5>
+                                <small>3.15<sup style="font-weight: lighter;">DHS</sup>
+                                    <h5 style="color: gray;">
+                                        VAT 5% incl</h5>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------Items-------->
+
+
+            <!-- footer -->
+            <footer class="footer py-3">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <h5 class="mb-4">About</h5>
+                            <ul>
+                                <li>
+                                    <p class="pr-4">
+                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                                        in a
+                                        piece of classical.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h5 class="mb-4">Contact Info</h5>
+                            <ul>
+                                <li>Address : AJMAN (UAE) : <br>
+                                    Al-khor towers, behind New Safeer Mall.
+                                </li>
+                                <li>Tel : 06-7408816</li>
+                                <li>Mob : 055-8905955</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-lg-3">
+                            <h5 class="mb-4">Social Links</h5>
+                            <ul>
+                                <span>
+                                    <!-- <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
+                                    <a href="https://www.facebook.com/KarachiRabri/" target="_blank"><i
+                                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer -->
+
+            <!-- bootstrao -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+</body>
+<!-- swiper js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<script>
+    var bool = false;
+    var overlay = document.getElementById('overlay');
+    var sidebar = document.getElementById('sidebar');
+    var playBtn = document.getElementById('play-btn');
+    var cancelVideo = document.getElementById('cancel-video');
+    var stickyTop = document.getElementsByClassName('sticky-top');
+    var video = document.getElementById('video');
+    var aTag = sidebar.getElementsByTagName('a');
+
+    function handleClick() {
+        sidebar.style.visibility = 'hidden';
+        sidebar.style.left = '-100%';
+        overlay.classList.add('d-none');
+        bool = false;
+    }
+
+    function handleNavbar() {
+        if (bool == false) {
+            overlay.classList.remove('d-none');
+            sidebar.style.visibility = 'visible';
+            sidebar.style.left = 0;
+            bool = true;
+        }
+        else {
+            overlay.classList.add('d-none');
+            sidebar.style.visibility = 'hidden';
+            sidebar.style.left = '-100%';
+            bool = false;
+        }
+    }
+
+    function playVideo() {
+        video.classList.remove('d-none');
+        video.currentTime = 0;
+        video.play();
+        cancelVideo.classList.remove('d-none');
+        document.body.style.overflowY = "hidden";
+        for (let i = 0; i < stickyTop.length; i++) {
+            stickyTop[i].classList.add('classZindex-1');
+        }
+
+    }
+
+    function closeVideo() {
+        video.classList.add('d-none');
+        video.pause();
+        cancelVideo.classList.add('d-none');
+        document.body.style.overflowY = "scroll";
+        for (let i = 0; i < stickyTop.length; i++) {
+            stickyTop[i].classList.remove('classZindex-1')
+        }
+    }
+</script>
+
+</html>

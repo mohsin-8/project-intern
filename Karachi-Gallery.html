@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--- Don't forget to add this meta tag otherwise your design won't responsive ---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- playball google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- Markazi Text google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Playball&display=swap" rel="stylesheet">
+    <!-- dancing script google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="16x16">
+
+    <title>Karachi Rabri - Gallery</title>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <div class="container-fluid">
+            <h1>Karachi Rabri - Gallery</h1>
+        </div>
+        <div class="gallery">
+            <div class="image"><span><img src="./karachi-gallery/img1.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img2.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img3.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img4.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img5.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img6.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img7.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img8.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img9.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="./karachi-gallery/img10.jpeg" alt=""></span></div>
+            <!-- video banner -->
+
+            <!-- video banner -->
+            <section class="video-banner py-5 mt-4">
+                <div class="banner-text text-center">
+                    <span id="play-btn" onclick="playVideo()"><i class="fa fa-play" id="playVideo"
+                            aria-hidden="true"></i></span>
+                    <h1>How We Make Ice Cream</h1>
+                    <p>Sweetness of cake better taste of coffee.</p>
+                </div>
+
+                <i onclick="closeVideo()" id="cancel-video" class="fa fa-times d-none" aria-hidden="true"></i>
+                <video id="video" class="d-none">
+                    <source src="./karachi-gallery/VID-20210609-WA0016.mp4" type="video/mp4">
+                </video>
+            </section>
+        </div>
+    </div>
+
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+            <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+            <div class="slide next"><i class="fas fa-angle-right"></i></div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="Gal.js"></script>
+
+    <script>
+        var playBtn = document.getElementById('play-btn');
+        var cancelVideo = document.getElementById('cancel-video');
+        var stickyTop = document.getElementsByClassName('sticky-top');
+
+        function playVideo() {
+            video.classList.remove('d-none');
+            video.currentTime = 0;
+            video.play();
+            cancelVideo.classList.remove('d-none');
+            document.body.style.overflowY = "hidden";
+            for (let i = 0; i < stickyTop.length; i++) {
+                stickyTop[i].classList.add('classZindex-1');
+            }
+
+        }
+
+        function closeVideo() {
+            video.classList.add('d-none');
+            video.pause();
+            cancelVideo.classList.add('d-none');
+            document.body.style.overflowY = "scroll";
+            for (let i = 0; i < stickyTop.length; i++) {
+                stickyTop[i].classList.remove('classZindex-1')
+            }
+        }
+    </script>
+</body>
+
+</html>
+<style>
+    /* video banner */
+    .video-banner {
+        background: linear-gradient(0deg, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('img/bg.jpg');
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 85vh;
+        background-attachment: fixed;
+        position: relative;
+        background-position: center center;
+    }
+
+    .video-banner .banner-text {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+    }
+
+    .video-banner .banner-text h1 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    .video-banner .banner-text p {
+        color: white;
+        letter-spacing: 1px;
+        font-size: 1.6rem;
+        font-family: 'Markazi Text', serif;
+        margin-top: 20px;
+    }
+
+    .video-banner .banner-text span {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-color: #A00B1E;
+        text-align: center;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        transition: 0.3s linear;
+        cursor: pointer;
+    }
+
+    .video-banner .banner-text span:hover {
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 1);
+    }
+
+    .video-banner .banner-text .fa-play {
+        color: white;
+        font-size: 2rem;
+        line-height: 80px;
+        margin-left: 5px;
+    }
+
+    /* video banner */
+
+
+    /* video-show */
+    .classZindex-1 {
+        z-index: -1 !important;
+    }
+
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 20;
+        border: none;
+        outline: none;
+    }
+
+    #cancel-video {
+        z-index: 25;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: red;
+    }
+
+    @media only screen and (max-width: 340px) {
+        .video-banner {
+            padding: 400px 20px;
+            min-height: 85vh;
+        }
+    }
+
+    @media only screen and (max-width: 230px) {
+        .video-banner {
+            min-height: 100vh;
+        }
+    }
+</style>
